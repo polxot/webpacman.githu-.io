@@ -1,2 +1,8 @@
 git init
 git status
+git add .
+git commit -m ""
+git log
+git log -h (сокращение от help)
+git show (heh commit)
+q  -закрытие (git show)
