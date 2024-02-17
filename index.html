@@ -3,87 +3,125 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://fonts.googleapis.com/css?family=Courier+Prime:regular,italic,700,700italic" rel="stylesheet" />
     <title>Сайт визитка</title>
-		<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header">
-			<img class="header__background" src="img/header/home.jpg" alt="bg">
-			<div class="header__background-wrapper"></div>
-      <div class="header-top">
-        <a href="" class="logo">Pavel Tamarin</a>
-        <nav class="navigation">
-          <ul class="menu">
-            <li class="menu-element">
-              <a href="#" class="menu-element__link active">Home</a>
-            </li>
-            <li class="menu-element">
-              <a href="#" class="menu-element__link">About</a>
-            </li>
-            <li class="menu-element">
-              <a href="#" class="menu-element__link">Achievements</a>
-            </li>
-            <li class="menu-element">
-              <a href="#" class="menu-element__link">Skills</a>
-            </li>
-            <li class="menu-element">
-              <a href="#" class="menu-element__link">Work</a>
-            </li>
-            <li class="menu-element">
-              <a href="#" class="menu-element__link">Interests</a>
-            </li>
-            <li class="menu-element">
-              <a href="#" class="menu-element__link">Books</a>
-            </li>
-            <li class="menu-element">
-              <a href="#" class="menu-element__link">Contact me</a>
-            </li>
-          </ul>
-        </nav>
-<div class="switcher-wrapper">
-				<!-- <input type="checkbox" id="lang" checked> -->
-				<input type="radio" name="lang" id="lang-ru" checked>
-				<label class="switcher" for="lang-ru">Ru</label>
+		<div class="header-top">
+			<a href="" class="link logo block-center">Pavel Tamarin</a>
+			<nav class="navigation">
+				<ul class="menu block-center ">
+					<li class="menu-element block-center">
+						<a
+							href="#home"
+							class="link menu-element__link active home block-center"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								fill="currentColor"
+								class="w-6 h-6"
+							>
+								<path
+									d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z"
+								/>
+								<path
+									d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z"
+								/>
+							</svg>
+						</a>
+					</li>
+					<li class="menu-element block-center">
+						<a href="#about-me" class="link menu-element__link">Обо&nbsp;мне</a>
+					</li>
+					<li class="menu-element block-center">
+						<a href="#achievements" class="link menu-element__link">Достижения</a>
+					</li>
+					<li class="menu-element block-center">
+						<a href="#skills" class="link menu-element__link">Навыки</a>
+					</li>
+					<li class="menu-element block-center">
+						<a href="#work" class="link menu-element__link">Работа</a>
+					</li>
+					<li class="menu-element block-center">
+						<a href="#interests" class="link menu-element__link">Интересы</a>
+					</li>
+					<li class="menu-element block-center">
+						<a href="#books" class="link menu-element__link">Книги</a>
+					</li>
+					<li class="menu-element block-center">
+						<a href="#contact-me" class="link menu-element__link">Связаться</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="switcher-container block-center">
+				<div class="switcher-wrapper">
+					<!-- <input type="checkbox" id="lang" checked> -->
+					<input type="radio" name="lang" id="lang-ru" checked />
+					<label class="switcher" for="lang-ru">Ru</label>
 
-				<input type="radio" name="lang" id="lang-Eng">
-				<label class="switcher" for="lang-Eng">Eng</label>
+					<input type="radio" name="lang" id="lang-Eng" />
+					<label class="switcher" for="lang-Eng">Eng</label>
 
-				<input type="radio" name="lang" id="lang-He" >
-				<label class="switcher" for="lang-He">He</label>
+					<input type="radio" name="lang" id="lang-He" />
+					<label class="switcher" for="lang-He">He</label>
 
-          <span class="lang-placeholder"></span>
+					<span class="lang-placeholder"></span>
 				</div>
 			</div>
-        <div class="header-center">
-					<div class="header-center__wrapper">
-						<h1 class="name">Тамарин&nbsp;Павел</h1>
-						<p class="description">
-							Привет меня зовут Павел. Я свободный художник, давайте знакомиться!
-						</p>
-				  </div>
-        </div>
+		</div>
+    <header class="header" id="home">
+      <img class="header__background" src="img/header/home.jpg" alt="bg" />
+      <div class="header__background-wrapper"></div>
       
+      <div class="header-center">
+        <div class="header-center__wrapper">
+          <h1 class="name">Тамарин&nbsp;Павел</h1>
+          <p class="description">
+            Привет меня зовут Павел. Я свободный художник, давайте знакомиться!
+          </p>
+        </div>
+      </div>
     </header>
 
-    <section class="about-me">
+    <section class="about-me" id="about-me">
       <div class="left">
         <img src="./img/я-.png" alt="мое фото" />
       </div>
       <div class="right">
-        <h2 class="about-me__title">
-					Тамарин Павел
-				</h2>
-        <p class="about-me__decription gray">
-					Все мы немножко fullstack...
-				</p>
+        <h2 class="about-me__title">Тамарин Павел</h2>
+        <p class="about-me__decription gray">Все мы немножко fullstack...</p>
         <p class="about-me__decription">
-          Я веб-разработчик уровня middle+ со стажем 8 лет. Начинал свой путь с написания небольших сайтов для знакомых, успел поработать в стартапе (больше не хочу), попробовал множество языков программирования и технологий.
+          Я веб-разработчик уровня middle+ со стажем 8 лет. Начинал свой путь с
+          написания небольших сайтов для знакомых, успел поработать в стартапе
+          (больше не хочу), попробовал множество языков программирования и
+          технологий.
         </p>
         <p class="about-me__decription">
-          Сейчас работаю в компании М Тех, а именно - развиваю и сопровождаю сайт <span> <a href="https://www.eldorado.ru/?utm_source=vshevchuk.ru&utm_medium=referral&utm_campaign=vshevchuk.ru&utm_referrer=vshevchuk.ru" target="_blank">eldorado.ru.</a> </span>  Тут я полюбил php, познакомился с React, научился работать в команде, активно общаться с "бизнесом", обучать и управлять.
+          Сейчас работаю в компании М Тех, а именно - развиваю и сопровождаю
+          сайт
+          <span>
+            <a
+              class="link"
+              href="https://www.eldorado.ru/?utm_source=vshevchuk.ru&utm_medium=referral&utm_campaign=vshevchuk.ru&utm_referrer=vshevchuk.ru"
+              target="_blank"
+              >eldorado.ru.</a
+            >
+          </span>
+          Тут я полюбил php, познакомился с React, научился работать в команде,
+          активно общаться с "бизнесом", обучать и управлять.
         </p>
         <p class="about-me__decription">
-          Свободное время посвящаю развитию и поддержке сторонних проектов, например, <span> <a href="https://moydameti.ru/" target="_blank">Мой да мети</a> </span> , стараюсь активно изучать framework Laravel или React и побольше времени проводить с семьей.
+          Свободное время посвящаю развитию и поддержке сторонних проектов,
+          например,
+          <span>
+            <a class="link" href="https://moydameti.ru/" target="_blank"
+              >Мой да мети</a
+            >
+          </span>
+          , стараюсь активно изучать framework Laravel или React и побольше
+          времени проводить с семьей.
         </p>
         <p class="about-me__decription">
           Мой канал на youtube
@@ -111,7 +149,9 @@
           </li>
           <li class="about-me__extra-element">
             <span class="bold">Образование:</span>
-            <span class="block"> ИРКУТСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ ПУТЕЙ СООБЩЕНИЯ</span>
+            <span class="block">
+              ИРКУТСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ ПУТЕЙ СООБЩЕНИЯ</span
+            >
           </li>
           <li class="about-me__extra-element">
             <span class="bold">Курсы:</span>
@@ -121,460 +161,523 @@
       </div>
     </section>
 
-<section class="achievements">
-	<h2 class="second-title">
-		Достижения
-	</h2>
-	<ul class="achievements-list">
-		<li class="achievements-list__element">Достижения 1</li>
-		<li class="achievements-list__element">Достижения 2</li>
-		<li class="achievements-list__element">Достижения 3</li>
-		<li class="achievements-list__element">Достижения 4</li>
-		<li class="achievements-list__element">Достижения 5</li>
-	</ul>
-</section>
+    <section class="achievements" id="achievements">
+      <h2 class="second-title">Достижения</h2>
+      <ul class="achievements-list">
+        <li class="achievements-list__element">Достижения 1</li>
+        <li class="achievements-list__element">Достижения 2</li>
+        <li class="achievements-list__element">Достижения 3</li>
+        <li class="achievements-list__element">Достижения 4</li>
+        <li class="achievements-list__element">Достижения 5</li>
+      </ul>
+    </section>
 
-<section class="skills">
-	<h2 class="second-title">
-		Навыки
-	</h2>
+    <section class="skills" id="skills">
+      <h2 class="second-title">Навыки</h2>
 
-<p class="section-descrition">
-	Все оценки являются субъективными и показывают уровень, который, как по мне, необходим для работы.
-</p>
-<ul class="skill-list">
-	<li class="skill-filter">Все</li>
-	<li class="skill-filter">Html/css</li>
-	<li class="skill-filter">Php</li>
-	<li class="skill-filter">Js</li>
-	<li class="skill-filter">Database</li>
-	<li class="skill-filter">Other</li>
-</ul>
+      <p class="section-descrition">
+        Все оценки являются субъективными и показывают уровень, который, как по
+        мне, необходим для работы.
+      </p>
+      <ul class="skill-list">
+        <li class="skill-filter">Все</li>
+        <li class="skill-filter">Html/css</li>
+        <li class="skill-filter">Php</li>
+        <li class="skill-filter">Js</li>
+        <li class="skill-filter">Database</li>
+        <li class="skill-filter">Other</li>
+      </ul>
 
-  <div class="skills-wrapper">
-		<ul class="skills-list left">
-			<li class="skills-list__element">Php</li>
-			<li class="skills-list__element">Laravel</li>
-			<li class="skills-list__element">Bitrix</li>
-			<li class="skills-list__element">Symfony</li>
-		</ul>
-	</div>
+      <div class="skills-wrapper">
+        <ul class="skills-list left">
+          <li class="skills-list__element">Php</li>
+          <li class="skills-list__element">Laravel</li>
+          <li class="skills-list__element">Bitrix</li>
+          <li class="skills-list__element">Symfony</li>
+        </ul>
+      </div>
 
-	
-<div class="skill-card right">
-	<div class="skill-card__title">
-		<img class="skill-card__img" src="goole.reduce((previousValue, currentValue, currentIndex, array) => {}, initialValue)" alt="Php">
-		<span class="skill-card__name">Php</span>
-	</div>
+      <div class="skill-card right">
+        <div class="skill-card__title">
+          <img
+            class="skill-card__img"
+            src="goole.reduce((previousValue, currentValue, currentIndex, array) => {}, initialValue)"
+            alt="Php"
+          />
+          <span class="skill-card__name">Php</span>
+        </div>
 
-<div class="skill-card__progress">
-	<span class="skill-card__progress-percent">85%</span>
-	<div class="skill-card__progress-bar"></div>
-</div>
-<p class="skill-card__descriphen">
-	Я люблю php. Это красивый и цельный язык программирования, который дает разработчику то, что ему нужно. В плохом коде всегда нужно задавать вопросы людям, а не языку программирования, поэтому, как бы php не хейтили - для меня он прекрасен!
-</p>
-</div>
-	
+        <div class="skill-card__progress">
+          <span class="skill-card__progress-percent">85%</span>
+          <div class="skill-card__progress-bar"></div>
+        </div>
+        <p class="skill-card__descriphen">
+          Я люблю php. Это красивый и цельный язык программирования, который
+          дает разработчику то, что ему нужно. В плохом коде всегда нужно
+          задавать вопросы людям, а не языку программирования, поэтому, как бы
+          php не хейтили - для меня он прекрасен!
+        </p>
+      </div>
+    </section>
 
+    
+    <section class="work" id="work">
+      <h2 class="second-title">Работа</h2>
 
+      <div class="work-wrapper">
+        <div class="work-element left">
+          <div class="work-element__content">
+            <p class="work-element__title">Официант и менеджер заведения</p>
+            <p class="work-element__description">декабрь 2015 - июль 2017</p>
 
-</section>
-<h2 class="second-title">
-	Интересы
-</h2>
-<section class="work">
-	<h2 class="second-title">
-		Работа
-	</h2>
+            <p class="work-element__block-title">Навыки</p>
 
-	<div class="work-wrapper">
-				<div class="work-element left">
-						<div class="work-element__content">
-							<p class="work-element__title">
-								Официант и менеджер заведения
-							</p>
-							<p class="work-element__description">
-								декабрь 2015 - июль 2017
-							</p>
+            <ul class="work-element__skills">
+              <li class="work-element__skills-element">Коммуникабельность</li>
+              <li class="work-element__skills-element">Стрессоустойчивость</li>
+              <li class="work-element__skills-element">Внимательность</li>
+            </ul>
+          </div>
+          <div class="work-element__date">2015</div>
+        </div>
+        <!--==============================================================================-->
+        <div class="work-element right">
+          <div class="work-element__content">
+            <p class="work-element__title">Верстальщик в проект</p>
+            <p class="work-element__description">апрель 2017 - октябрь 2017</p>
 
-							<p class="work-element__block-title">
-								Навыки
-							</p>
+            <p class="work-element__block-title">Проекты</p>
+            <ul class="work-element__projects">
+              <li class="work-element__element work-projects">
+                <span class="work-projects__title">Сайт РСК Стройсервис</span>
+                <div class="work-tooltip">
+                  <p class="work-projects__description">
+                    Вёрстка, поддержка и раскрутка сайта gksts.ru (сейчас
+                    недоступен)
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <p class="work-element__block-title">Навыки</p>
 
-							<ul class="work-element__skills">
-								<li class="work-element__skills-element">Коммуникабельность</li>
-								<li class="work-element__skills-element">Стрессоустойчивость</li>
-								<li class="work-element__skills-element">Внимательность</li>
-							</ul>
-						</div>
-						<div class="work-element__date">2015</div>
-				</div>
-    <!--==============================================================================-->
-				<div class="work-element right">
-					<div class="work-element__content">
-						<p class="work-element__title">
-							Верстальщик в проект
-						</p>
-						<p class="work-element__description">
-							апрель 2017 - октябрь 2017
-						</p>
+            <ul class="work-element__skills">
+              <li class="work-element__skills-element">html</li>
+              <li class="work-element__skills-element">css</li>
+              <li class="work-element__skills-element">sass</li>
+              <li class="work-element__skills-element">javascript</li>
+              <li class="work-element__skills-element">gulp</li>
+              <li class="work-element__skills-element">seo</li>
+              <li class="work-element__skills-element">яндекс.директ</li>
+              <li class="work-element__skills-element">instagram</li>
+            </ul>
+          </div>
+        </div>
+        <div class="work-element__date">2016</div>
 
-						<p class="work-element__block-title">
-							Проекты
-						</p>
-						<ul class="work-element__projects">
-							<li class="work-element__element work-projects">
-								<span class="work-projects__title">Сайт РСК Стройсервис</span>
-								<div class="work-tooltip">
-									<p class="work-projects__description">
-										Вёрстка, поддержка и раскрутка сайта gksts.ru (сейчас недоступен)
-									</p>
-								</div>
-							</li>
-						</ul>
-						<p class="work-element__block-title">
-							Навыки
-						</p>
+        <!--==============================================================================-->
+        <div class="work-element left">
+          <div class="work-element__content">
+            <p class="work-element__title">ООО "Чейнкс"</p>
+            <p class="work-element__description">октябрь 2017 - ноябрь 2018</p>
 
-						<ul class="work-element__skills">
-								<li class="work-element__skills-element">html</li>
-								<li class="work-element__skills-element">css</li>
-								<li class="work-element__skills-element">sass</li>
-								<li class="work-element__skills-element">javascript</li>
-								<li class="work-element__skills-element">gulp</li>
-								<li class="work-element__skills-element">seo</li>
-								<li class="work-element__skills-element">яндекс.директ</li>
-								<li class="work-element__skills-element">instagram</li>
-						</ul>
+            <p class="work-element__block-title">Проекты</p>
+            <ul class="work-element__projects">
+              <li class="work-element__element work-projects">
+                <span class="work-projects__title">Blockchain</span>
+                <div class="work-tooltip">
+                  <p class="work-projects__description">
+                    Интеграция с блокчейн проектом через javascript
+                  </p>
+                </div>
+              </li>
 
-					</div>
-				</div>
-			  <div class="work-element__date">2016</div>
-		
-   <!--==============================================================================-->
-		<div class="work-element left">
-			<div class="work-element__content">
-				
-					<p class="work-element__title">
-						ООО "Чейнкс"
-					</p>
-					<p class="work-element__description">
-						октябрь 2017 - ноябрь 2018
-					</p>
+              <li class="work-element__element work-projects">
+                <span class="work-projects__title">WebTMA</span>
+                <div class="work-tooltip">
+                  <p class="work-projects__description">
+                    Сайт для российской команды поддержки WebTMA webtma.ru
+                    (сейчас недоступен)
+                  </p>
+                </div>
+              </li>
 
-					<p class="work-element__block-title">
-						Проекты
-					</p>
-					<ul class="work-element__projects">
-						<li class="work-element__element work-projects">
-							<span class="work-projects__title">Blockchain</span>
-							<div class="work-tooltip">
-								<p class="work-projects__description">
-									Интеграция с блокчейн проектом через javascript
-								</p>
-							</div>
-						</li>
+              <li class="work-element__element work-projects">
+                <span class="work-projects__title">OMKontrol</span>
+                <div class="work-tooltip">
+                  <p class="work-projects__description">
+                    Сайт для организации OMKontrol и OMKService omkservice.ru
+                  </p>
+                </div>
+              </li>
 
-						<li class="work-element__element work-projects">
-							<span class="work-projects__title">WebTMA</span>
-							<div class="work-tooltip">
-								<p class="work-projects__description">
-									Сайт для российской команды поддержки WebTMA webtma.ru (сейчас недоступен)
-								</p>
-							</div>
-						</li>
+              <li class="work-element__element work-projects">
+                <span class="work-projects__title">QRCodeNavigation</span>
+                <div class="work-tooltip">
+                  <p class="work-projects__description">
+                    Проект по навигационным карточкам с использованием QR-кодов.
+                    Сервер на node.js, БД - sqlite3 + mongoDB
+                  </p>
+                </div>
+              </li>
 
-						<li class="work-element__element work-projects">
-							<span class="work-projects__title">OMKontrol</span>
-							<div class="work-tooltip">
-								<p class="work-projects__description">
-									Сайт для организации OMKontrol и OMKService omkservice.ru
-								</p>
-							</div>
-						</li>
+              <li class="work-element__element work-projects">
+                <span class="work-projects__title">BrandCheck</span>
+                <div class="work-tooltip">
+                  <p class="work-projects__description">
+                    Блог-интеграция с проектом BrandCheck. Реализация на Django
+                    Framework
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <p class="work-element__block-title">Навыки</p>
 
-						<li class="work-element__element work-projects">
-							<span class="work-projects__title">QRCodeNavigation</span>
-							<div class="work-tooltip">
-								<p class="work-projects__description">
-									Проект по навигационным карточкам с использованием QR-кодов. Сервер на node.js, БД - sqlite3 + mongoDB
-								</p>
-							</div>
-						</li>
+            <ul class="work-element__skills">
+              <li class="work-element__skills-element">html+</li>
+              <li class="work-element__skills-element">css+</li>
+              <li class="work-element__skills-element">javascript+</li>
+              <li class="work-element__skills-element">blockchain</li>
+              <li class="work-element__skills-element">node.js</li>
+              <li class="work-element__skills-element">python</li>
+              <li class="work-element__skills-element">django</li>
+              <li class="work-element__skills-element">solidity</li>
+              <li class="work-element__skills-element">sqlite3</li>
+              <li class="work-element__skills-element">mongodb</li>
+              <li class="work-element__skills-element">postgresql</li>
+              <li class="work-element__skills-element">linux</li>
+              <li class="work-element__skills-element">git</li>
+            </ul>
+          </div>
+        </div>
+        <div class="work-element__date">2017</div>
+        <!--==============================================================================-->
 
-						<li class="work-element__element work-projects">
-							<span class="work-projects__title">BrandCheck</span>
-							<div class="work-tooltip">
-								<p class="work-projects__description">
-									Блог-интеграция с проектом BrandCheck. Реализация на Django Framework
-								</p>
-							</div>
-						</li>
+        <div class="work-element right">
+          <div class="work-element__content">
+            <p class="work-element__title">ООО "М Тех"</p>
+            <p class="work-element__description">
+              с ноября 2018 по настоящее время
+            </p>
 
-					</ul>
-					<p class="work-element__block-title">
-						Навыки
-					</p>
+            <p class="work-element__block-title">Проекты</p>
+            <ul class="work-element__projects">
+              <li class="work-element__element work-projects">
+                <span class="work-projects__title">Checkin</span>
+                <div class="work-tooltip">
+                  <p class="work-projects__description">
+                    Акция "Оставайся дома" + "Чеин". Начисление бонусных баллов
+                    при клике через CRM
+                  </p>
+                </div>
+              </li>
 
-					<ul class="work-element__skills">
-							<li class="work-element__skills-element">html+</li>
-							<li class="work-element__skills-element">css+</li>
-							<li class="work-element__skills-element">javascript+</li>
-							<li class="work-element__skills-element">blockchain</li>
-							<li class="work-element__skills-element">node.js</li>
-							<li class="work-element__skills-element">python</li>
-							<li class="work-element__skills-element">django</li>
-							<li class="work-element__skills-element">solidity</li>
-							<li class="work-element__skills-element">sqlite3</li>
-							<li class="work-element__skills-element">mongodb</li>
-							<li class="work-element__skills-element">postgresql</li>
-							<li class="work-element__skills-element">linux</li>
-							<li class="work-element__skills-element">git</li>
-					</ul>
+              <li class="work-element__element work-projects">
+                <span class="work-projects__title">Интерфейсы support</span>
+                <div class="work-tooltip">
+                  <p class="work-projects__description">
+                    Пространство интерфейсов для операторов, админов и
+                    Call-центра. Ускоряет решение заявок в пару кликов
+                  </p>
+                </div>
+              </li>
 
-				</div>
-			</div>
-			<div class="work-element__date">2017</div>
-	<!--==============================================================================-->	
+              <li class="work-element__element work-projects">
+                <span class="work-projects__title">OMKontrol</span>
+                <div class="work-tooltip">
+                  <p class="work-projects__description">
+                    Сайт для организации OMKontrol и OMKService omkservice.ru
+                  </p>
+                </div>
+              </li>
 
-    <div class="work-element right">
-			<div class="work-element__content">
-				
-				<p class="work-element__title">
-					ООО "М Тех"
-				</p>
-				<p class="work-element__description">
-					с ноября 2018 по настоящее время
-				</p>
+              <li class="work-element__element work-projects">
+                <span class="work-projects__title">Редизайн</span>
+                <div class="work-tooltip">
+                  <p class="work-projects__description">
+                    Участвовал в 2-х редизайнах сайта (в 2018 и 2021 году)
+                  </p>
+                </div>
+              </li>
 
-				<p class="work-element__block-title">
-					Проекты
-				</p>
-				<ul class="work-element__projects">
-					<li class="work-element__element work-projects">
-						<span class="work-projects__title">Checkin</span>
-						<div class="work-tooltip">
-							<p class="work-projects__description">
-								Акция "Оставайся дома" + "Чеин". Начисление бонусных баллов при клике через CRM
-							</p>
-						</div>
-					</li>
+              <li class="work-element__element work-projects">
+                <span class="work-projects__title">Предзаказ</span>
+                <div class="work-tooltip">
+                  <p class="work-projects__description">
+                    Принимал участие в реализации функционала предзаказа
+                  </p>
+                </div>
+              </li>
 
-					<li class="work-element__element work-projects">
-						<span class="work-projects__title">Интерфейсы support</span>
-						<div class="work-tooltip">
-							<p class="work-projects__description">
-								Пространство интерфейсов для операторов, админов и Call-центра. Ускоряет решение заявок в пару кликов
-							</p>
-						</div>
-					</li>
+              <li class="work-element__element work-projects">
+                <span class="work-projects__title">ГНЦ</span>
+                <div class="work-tooltip">
+                  <p class="work-projects__description">
+                    Интеграция с партнерами по акции "Гарантия низкой цены"
+                  </p>
+                </div>
+              </li>
 
-					<li class="work-element__element work-projects">
-						<span class="work-projects__title">OMKontrol</span>
-						<div class="work-tooltip">
-							<p class="work-projects__description">
-								Сайт для организации OMKontrol и OMKService omkservice.ru
-							</p>
-						</div>
-					</li>
+              <li class="work-element__element work-projects">
+                <span class="work-projects__title">New Loyalty</span>
+                <div class="work-tooltip">
+                  <p class="work-projects__description">
+                    Реализация программы лояльности
+                  </p>
+                </div>
+              </li>
 
-					<li class="work-element__element work-projects">
-						<span class="work-projects__title">Редизайн</span>
-						<div class="work-tooltip">
-							<p class="work-projects__description">
-								Участвовал в 2-х редизайнах сайта (в 2018 и 2021 году)
-							</p>
-						</div>
-					</li>
+              <li class="work-element__element work-projects">
+                <span class="work-projects__title">B2B</span>
+                <div class="work-tooltip">
+                  <p class="work-projects__description">
+                    Участие в разработке и поддержке проекта B2B на платформе
+                    Bitrix24
+                  </p>
+                </div>
+              </li>
 
-					<li class="work-element__element work-projects">
-						<span class="work-projects__title">Предзаказ</span>
-						<div class="work-tooltip">
-							<p class="work-projects__description">
-								Принимал участие в реализации функционала предзаказа
-							</p>
-						</div>
-					</li>
+              <li class="work-element__element work-projects">
+                <span class="work-projects__title"
+                  >RR, DY, Flocktory, Diginetica, Mindbox...</span
+                >
+                <div class="work-tooltip">
+                  <p class="work-projects__description">
+                    Множество интеграций с различными сервисами для сбора и
+                    получения данных
+                  </p>
+                </div>
+              </li>
 
-					<li class="work-element__element work-projects">
-						<span class="work-projects__title">ГНЦ</span>
-						<div class="work-tooltip">
-							<p class="work-projects__description">
-								Интеграция с партнерами по акции "Гарантия низкой цены"
-							</p>
-						</div>
-					</li>
+              <li class="work-element__element work-projects">
+                <span class="work-projects__title">more..</span>
+                <div class="work-tooltip">
+                  <p class="work-projects__description">
+                    И много других интересных проектов
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <p class="work-element__block-title">Навыки</p>
 
-					<li class="work-element__element work-projects">
-						<span class="work-projects__title">New Loyalty</span>
-						<div class="work-tooltip">
-							<p class="work-projects__description">
-								Реализация программы лояльности
-							</p>
-						</div>
-					</li>
+            <ul class="work-element__skills">
+              <li class="work-element__skills-element">php</li>
+              <li class="work-element__skills-element">bitrix</li>
+              <li class="work-element__skills-element">bitrix24</li>
+              <li class="work-element__skills-element">git+</li>
+              <li class="work-element__skills-element">html+</li>
+              <li class="work-element__skills-element">css+</li>
+              <li class="work-element__skills-element">javascript+</li>
+              <li class="work-element__skills-element">react</li>
+              <li class="work-element__skills-element">redux</li>
+              <li class="work-element__skills-element">redux saga</li>
+              <li class="work-element__skills-element">postgresql</li>
+              <li class="work-element__skills-element">typescript</li>
+              <li class="work-element__skills-element">next.js</li>
+              <li class="work-element__skills-element">mysql</li>
+              <li class="work-element__skills-element">redis</li>
+              <li class="work-element__skills-element">linux+</li>
+              <li class="work-element__skills-element">docker</li>
+              <li class="work-element__skills-element">concourse</li>
+              <li class="work-element__skills-element">ООП</li>
+              <li class="work-element__skills-element">patterns</li>
+              <li class="work-element__skills-element">jira</li>
+              <li class="work-element__skills-element">team lead skills</li>
+            </ul>
+          </div>
+          <div class="work-element__date">2018</div>
+        </div>
+      </div>
+    </section>
 
-					<li class="work-element__element work-projects">
-						<span class="work-projects__title">B2B</span>
-						<div class="work-tooltip">
-							<p class="work-projects__description">
-								Участие в разработке и поддержке проекта B2B на платформе Bitrix24
-							</p>
-						</div>
-					</li>
+    <section class="interests" id="interests">
+      <div class="interest-wrapper">
+				<h2 class="second-title">Интересы</h2>
+        <img
+          class="interests-image"
+          src="https://vshevchuk.ru/static/images/interests/program.webp"
+          alt=""
+        />
+        <p class="interest-title">Lorem ipsum dolor sit abet.</p>
+        <p class="interest-text">
+          Lorem, ipsum dolor sit abet connecter adipisicing edit. Maxime harum
+          sequi veniam enim incidunt ea odit! Nulla soluta blanditiis
+          laudantium.
+        </p>
+        <p class="interest-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime harum
+          sequi veniam enim incidunt ea odit! Nulla soluta blanditiis
+          laudantium.
+        </p>
+        <p class="interest-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime harum
+          sequi veniam enim incidunt ea odit! Nulla soluta blanditiis
+          laudantium.
+        </p>
+      </div>
 
-					<li class="work-element__element work-projects">
-						<span class="work-projects__title">RR, DY, Flocktory, Diginetica, Mindbox...</span>
-						<div class="work-tooltip">
-							<p class="work-projects__description">
-								Множество интеграций с различными сервисами для сбора и получения данных
-							</p>
-						</div>
-					</li>
+      <div class="interest-wrapper">
+        <img
+          class="interests-image"
+          src="https://vshevchuk.ru/static/images/interests/spider.webp"
+          alt=""
+        />
+        <p class="interest-title">Lorem ipsum dolor sit abet.</p>
+        <p class="interest-text">
+          Lorem, ipsum dolor sit abet connecter adipisicing edit. Maxim
+          harlequin venial enid incident ea doit! Null solita bandits laudanum.
+        </p>
+        <p class="interest-text">
+          Lorem, ipsum dolor sit abet connecterdipisicing edit. Maxim harm
+          sequinvenam enid incident ea doit! Null slotablanditiis laudanum.
+        </p>
+        <p class="interest-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime harum
+          sequin venial enid incident ea doit! Null solita bandits laudanum.
+        </p>
+      </div>
 
-					<li class="work-element__element work-projects">
-						<span class="work-projects__title">more..</span>
-						<div class="work-tooltip">
-							<p class="work-projects__description">
-								И много других интересных проектов
-							</p>
-						</div>
-					</li>
+      <div class="interest-wrapper">
+        <img
+          class="interests-image"
+          src="https://vshevchuk.ru/static/images/interests/game.webp"
+          alt=""
+        />
+        <p class="interest-title">Lorem ipsum dolor sit amet.</p>
+        <p class="interest-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime harum
+          sequi veniam enim incidunt ea odit! Nulla soluta blanditiis
+          laudantium.
+        </p>
+        <p class="interest-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime harum
+          sequi veniam enim incidunt ea odit! Nulla soluta blanditiis
+          laudantium.
+        </p>
+        <p class="interest-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime harum
+          sequi veniam enim incidunt ea odit! Nulla soluta blanditiis
+          laudantium.
+        </p>
+      </div>
 
-				</ul>
-				<p class="work-element__block-title">
-					Навыки
-				</p>
+      <div class="interest-wrapper">
+        <img
+          class="interests-image"
+          src="https://vshevchuk.ru/static/images/interests/chill.webp"
+          alt=""
+        />
+        <p class="interest-title">Lorem ipsum dolor sit amet.</p>
+        <p class="interest-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime harum
+          sequi veniam enim incidunt ea odit! Nulla soluta blanditiis
+          laudantium.
+        </p>
+        <p class="interest-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime harum
+          sequi veniam enim incidunt ea odit! Nulla soluta blanditiis
+          laudantium.
+        </p>
+        <p class="interest-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime harum
+          sequi veniam enim incidunt ea odit! Nulla soluta blanditiis
+          laudantium.
+        </p>
+      </div>
 
-				<ul class="work-element__skills">
-						<li class="work-element__skills-element">php</li>
-						<li class="work-element__skills-element">bitrix</li>
-						<li class="work-element__skills-element">bitrix24</li>
-						<li class="work-element__skills-element">git+</li>
-						<li class="work-element__skills-element">html+</li>
-						<li class="work-element__skills-element">css+</li>
-						<li class="work-element__skills-element">javascript+</li>
-						<li class="work-element__skills-element">react</li>
-						<li class="work-element__skills-element">redux</li>
-						<li class="work-element__skills-element">redux saga</li>
-						<li class="work-element__skills-element">postgresql</li>
-						<li class="work-element__skills-element">typescript</li>
-						<li class="work-element__skills-element">next.js</li>
-						<li class="work-element__skills-element">mysql</li>
-						<li class="work-element__skills-element">redis</li>
-						<li class="work-element__skills-element">linux+</li>
-						<li class="work-element__skills-element">docker</li>
-						<li class="work-element__skills-element">concourse</li>
-						<li class="work-element__skills-element">ООП</li>
-						<li class="work-element__skills-element">patterns</li>
-						<li class="work-element__skills-element">jira</li>
-						<li class="work-element__skills-element">team lead skills</li>
-				</ul>
+      <div class="interest-wrapper">
+        <img
+          class="interests-image"
+          src="https://vshevchuk.ru/static/images/interests/car.webp"
+          alt=""
+        />
+        <p class="interest-title">Lorem ipsum dolor sit amet.</p>
+        <p class="interest-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime harum
+          sequi veniam enim incidunt ea odit! Nulla soluta blanditiis
+          laudantium.
+        </p>
+        <p class="interest-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime harum
+          sequi veniam enim incidunt ea odit! Nulla soluta blanditiis
+          laudantium.
+        </p>
+        <p class="interest-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime harum
+          sequi veniam enim incidunt ea odit! Nulla soluta blanditiis
+          laudantium.
+        </p>
+      </div>
 
-			</div>
-				<div class="work-element__date">2018</div>
-    </div>
-	</div>
-</section>
+      <div class="interest-wrapper">
+        <img
+          class="interests-image"
+          src="https://vshevchuk.ru/static/images/interests/car.webp"
+          alt=""
+        />
+        <p class="interest-title">Lorem ipsum dolor sit amet.</p>
+        <p class="interest-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime harum
+          sequi veniam enim incidunt ea odit! Nulla soluta blanditiis
+          laudantium.
+        </p>
+        <p class="interest-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime harum
+          sequi veniam enim incidunt ea odit! Nulla soluta blanditiis
+          laudantium.
+        </p>
+        <p class="interest-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime harum
+          sequi veniam enim incidunt ea odit! Nulla soluta blanditiis
+          laudantium.
+        </p>
+      </div>
+    </section>
 
-<section class="interests">
+    <section class="books" id="books">
+      <h2 class="second-title">Прочитанные книги</h2>
 
-<div class="interest-wrapper">
-	 <img class="interests-image" src="https://vshevchuk.ru/static/images/interests/program.webp" alt="">
-   <p class="interest-title">Lorem ipsum dolor sit abet.</p>
-   <p class="interest-text">Lorem, ipsum dolor sit abet connecter adipisicing edit. Maxime harum sequi veniam enim incidunt ea odit! Nulla soluta blanditiis laudantium.</p>
-   <p class="interest-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime harum sequi veniam enim incidunt ea odit! Nulla soluta blanditiis laudantium.</p>
-   <p class="interest-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime harum sequi veniam enim incidunt ea odit! Nulla soluta blanditiis laudantium.</p>
-</div>
+      <p class="section-descrition">
+        Тут указаны не все прочитанные мной книги, а только те книги, которые
+        произвели на меня наибольшее впечатление
+      </p>
 
-<div class="interest-wrapper">
-	<img class="interests-image" src="https://vshevchuk.ru/static/images/interests/spider.webp" alt="">
-	<p class="interest-title">Lorem ipsum dolor sit abet.</p>
-	<p class="interest-text">Lorem, ipsum dolor sit abet connecter adipisicing edit. Maxim harlequin venial enid incident ea doit! Null solita bandits laudanum.</p>
-	<p class="interest-text">Lorem, ipsum dolor sit abet connecterdipisicing edit. Maxim harm sequinvenam enid incident ea doit! Null slotablanditiis laudanum.</p>
-	<p class="interest-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime harum sequin venial enid incident ea doit! Null solita bandits laudanum.</p>
-</div>
+      <ul class="achievements-list">
+        <li class="books-list__element">книга 1</li>
+        <li class="books-list__element">книга 2</li>
+        <li class="books-list__element">книга 3</li>
+        <li class="books-list__element">книга 4</li>
+        <li class="books-list__element">книга 5</li>
+      </ul>
+    </section>
 
-<div class="interest-wrapper">
-	<img class="interests-image" src="https://vshevchuk.ru/static/images/interests/game.webp" alt="">
-	<p class="interest-title">Lorem ipsum dolor sit amet.</p>
-	<p class="interest-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime harum sequi veniam enim incidunt ea odit! Nulla soluta blanditiis laudantium.</p>
-	<p class="interest-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime harum sequi veniam enim incidunt ea odit! Nulla soluta blanditiis laudantium.</p>
-	<p class="interest-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime harum sequi veniam enim incidunt ea odit! Nulla soluta blanditiis laudantium.</p>
-</div>
+    <section class="contact-me" id="contact-me">
+      <h2 class="second-title">Обратная связь</h2>
 
-<div class="interest-wrapper">
-	<img class="interests-image" src="https://vshevchuk.ru/static/images/interests/chill.webp" alt="">
-	<p class="interest-title">Lorem ipsum dolor sit amet.</p>
-	<p class="interest-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime harum sequi veniam enim incidunt ea odit! Nulla soluta blanditiis laudantium.</p>
-	<p class="interest-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime harum sequi veniam enim incidunt ea odit! Nulla soluta blanditiis laudantium.</p>
-	<p class="interest-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime harum sequi veniam enim incidunt ea odit! Nulla soluta blanditiis laudantium.</p>
-</div>
+      <form action="" class="contact-me__form">
+        <div class="input-wrapper">
+          <label class="label" for="name" required>Имя</label>
+          <input class="input" type="text" id="name" />
+        </div>
 
-<div class="interest-wrapper">
-	<img class="interests-image" src="https://vshevchuk.ru/static/images/interests/car.webp" alt="">
-	<p class="interest-title">Lorem ipsum dolor sit amet.</p>
-	<p class="interest-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime harum sequi veniam enim incidunt ea odit! Nulla soluta blanditiis laudantium.</p>
-	<p class="interest-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime harum sequi veniam enim incidunt ea odit! Nulla soluta blanditiis laudantium.</p>
-	<p class="interest-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime harum sequi veniam enim incidunt ea odit! Nulla soluta blanditiis laudantium.</p>
-</div>
+        <div class="input-wrapper">
+          <label class="label" for="">E-mail</label>
+          <input class="input" type="email" id="email" required />
+        </div>
 
-<div class="interest-wrapper">
-	<img class="interests-image" src="https://vshevchuk.ru/static/images/interests/car.webp" alt="">
-	<p class="interest-title">Lorem ipsum dolor sit amet.</p>
-	<p class="interest-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime harum sequi veniam enim incidunt ea odit! Nulla soluta blanditiis laudantium.</p>
-	<p class="interest-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime harum sequi veniam enim incidunt ea odit! Nulla soluta blanditiis laudantium.</p>
-	<p class="interest-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime harum sequi veniam enim incidunt ea odit! Nulla soluta blanditiis laudantium.</p>
-</div>
+        <div class="textarea-wrapper">
+          <label class="label" for="">Сообщение</label>
+          <textarea
+            class="textarea"
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
 
-</section>
-
-<section class="books">
-	<h2 class="second-title">
-		Прочитанные книги
-	</h2>
-
-	<p class="section-descrition">
-		Тут указаны не все прочитанные мной книги, а только те книги, которые произвели на меня наибольшее впечатление
-	</p>
-
-	<ul class="achievements-list">
-		<li class="books-list__element">книга 1</li>
-		<li class="books-list__element">книга 2</li>
-		<li class="books-list__element">книга 3</li>
-		<li class="books-list__element">книга 4</li>
-		<li class="books-list__element">книга 5</li>
-	</ul>
-</section>
-
-<section class="contact-me">
-	<h2 class="second-title">
-		Обратная связь
-	</h2>
-
-<form action="" class="contact-me__form">
-	<div class="input-wrapper">
-		<label  class="label" for="name" required>Имя</label>
-    <input class="input" type="text" id="name">
-	</div>
-
-	<div class="input-wrapper">
-		<label  class="label" for="">E-mail</label>
-		<input  class="input" type="email" id="email" required>
-		
-	</div>
-
-	<div class="textarea-wrapper">
-		<label  class="label" for="">Сообщение</label>
-		<textarea class="textarea" name="message" id="message" cols="30" rows="10"></textarea>
-		
-	</div>
-
-	<button type="submit" class="submit">Отправить</button>
-</form>
-
-</section>
+        <button type="submit" class="submit">Отправить</button>
+      </form>
+    </section>
 
     <footer class="footer">
       <ul class="sosial">

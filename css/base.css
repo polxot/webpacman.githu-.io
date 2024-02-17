@@ -1,8 +1,13 @@
-a {
+a.link {
 	color: var(--color-green);
 	text-decoration: none;
 	transition: opacity 0.25s ease;
 }
-a:hover {
+a.link:hover {
 	opacity: 0.7;
+}
+.block-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
