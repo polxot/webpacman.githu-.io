@@ -1,8 +1,16 @@
-git init
 git status
+git init
 git add .
 git commit -m ""
 git log
 git log -h (сокращение от help)
 git show (heh commit)
 q  -закрытие (git show)
+
+git remote add origin https://github.com/polxot/webpacman.githu-.io.git
+git remote -v  (проверка добавления в репозиторий)
+
+git branch master   - создание ветки мастер
+git branch           -просмотр всех веток
+git checkout master -переключение на ветку (master)
+git push origin master -отправка данных на репозиторий (ветка master)

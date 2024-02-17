@@ -4,48 +4,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сайт визитка</title>
+		<link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
+			<img class="header__background" src="img/header/home.jpg" alt="bg">
+			<div class="header__background-wrapper"></div>
       <div class="header-top">
-        <span class="logo">Webpacman</span>
+        <a href="" class="logo">Pavel Tamarin</a>
         <nav class="navigation">
           <ul class="menu">
             <li class="menu-element">
-              <a href="#" class="menu-element__link"></a>Home
+              <a href="#" class="menu-element__link active">Home</a>
             </li>
             <li class="menu-element">
-              <a href="#" class="menu-element__link"></a>About
+              <a href="#" class="menu-element__link">About</a>
             </li>
             <li class="menu-element">
-              <a href="#" class="menu-element__link"></a>Achievements
+              <a href="#" class="menu-element__link">Achievements</a>
             </li>
             <li class="menu-element">
-              <a href="#" class="menu-element__link"></a>Skills
+              <a href="#" class="menu-element__link">Skills</a>
             </li>
             <li class="menu-element">
-              <a href="#" class="menu-element__link"></a>Work
+              <a href="#" class="menu-element__link">Work</a>
             </li>
             <li class="menu-element">
-              <a href="#" class="menu-element__link"></a>Interests
+              <a href="#" class="menu-element__link">Interests</a>
             </li>
             <li class="menu-element">
-              <a href="#" class="menu-element__link"></a>Books
+              <a href="#" class="menu-element__link">Books</a>
             </li>
             <li class="menu-element">
-              <a href="#" class="menu-element__link"></a>Contact me
+              <a href="#" class="menu-element__link">Contact me</a>
             </li>
           </ul>
         </nav>
+<div class="switcher-wrapper">
+				<!-- <input type="checkbox" id="lang" checked> -->
+				<input type="radio" name="lang" id="lang-ru" checked>
+				<label class="switcher" for="lang-ru">Ru</label>
 
-        <div class="switcher">Ru/Eng</div>
+				<input type="radio" name="lang" id="lang-Eng">
+				<label class="switcher" for="lang-Eng">Eng</label>
+
+				<input type="radio" name="lang" id="lang-He" >
+				<label class="switcher" for="lang-He">He</label>
+
+          <span class="lang-placeholder"></span>
+				</div>
+			</div>
         <div class="header-center">
-          <h1 class="name">Тамарин&nbsp;Павел</h1>
-          <p class="description">
-            Привет меня зовут Павел. Я свободный художник, давайте знакомиться!
-          </p>
+					<div class="header-center__wrapper">
+						<h1 class="name">Тамарин&nbsp;Павел</h1>
+						<p class="description">
+							Привет меня зовут Павел. Я свободный художник, давайте знакомиться!
+						</p>
+				  </div>
         </div>
-      </div>
+      
     </header>
 
     <section class="about-me">
