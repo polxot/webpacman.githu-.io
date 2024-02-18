@@ -1,0 +1,70 @@
+.about-me {
+	display: flex;
+	align-items: center;
+	/* .about-me__title */
+}
+
+.about-me__title {
+	font-size: 3.0rem;
+}
+
+.about-me__description {
+	font-size: 1.8rem;
+	color: var(--color-text);
+	margin-bottom: 5px;
+
+}
+ul.about-me__extra {
+	color: var(--color-text);
+	font-size: 1.8rem;
+	margin-bottom: 20px;
+}
+.about-me__extra-element {
+   display: flex;
+	 margin-bottom: 10px;
+}
+.about-me__extra-element:last-of-type {
+	margin-bottom: 0;
+}
+
+
+.about-me__icon {
+	width: 24px;
+	height: 24px;
+	margin-right: 5px;
+}
+.about-me__icon svg {
+	color: var(--color-green);
+}
+.about-me__extra-title {
+ margin-right: 10px;
+}
+.about-me .left {
+	flex: 1 1 30%;
+}
+
+.about-me .right {
+	flex: 1 1 70%;
+	padding-left: 10px;
+}
+
+.about-me__image {
+	width: 85%;
+	height: 90%;
+	margin-left: auto;
+	margin-right: 40px;
+	border-radius: 10px;
+	filter: drop-shadow(10px 10px 10px var(--background-black-opacity));
+}
+
+.about-me .right {
+	flex: 1 1 70%;
+}
+
+.gray {
+	color: var(--color-gray);
+}
+
+
+
+

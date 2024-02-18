@@ -1,4 +1,6 @@
 :root {
 	--color-green : #76bc21; 
 	--background-black-opacity: rgba(0, 0, 0, 0.5);
+	--color-text-black: #262626;
+	--color-gray:#9e9e9e;
 }
