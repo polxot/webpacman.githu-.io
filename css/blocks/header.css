@@ -45,10 +45,12 @@
 	color: #fff;
 
 }
+
 .logo {
 	width: 260px;
 	font-size: 3.6rem;
 }
+
 .menu-element {
 	margin-right: 25px;
 	font-size: 2.2rem;
@@ -79,6 +81,10 @@
 .menu-element__link.home svg {
 	width: 24px;
 	height: 24px;
+}
+.switcher {
+	font-size: 1.6rem;
+	font-weight: 600; 
 }
 
 .switcher-container {
@@ -193,36 +199,39 @@
 .description {
 	display: inline-block;
 	font-size: 2.2rem;
-
-	/* font-family: 'Courier+Prime', Courier, monospace; */
+	font-family:'Courier Prime', monospace;
+	
+	font-weight: 600;
 	padding: 5px 10px;
 	width: 900px;
-	
+
 	border-right: 3px solid transparent;
 	line-height: 1.5em;
 	white-space: nowrap;
 
+
+
 	overflow: hidden;
-
-
-	 animation: cursor 0.75s 8, print-text 5s steps(67);
+	animation: cursor 0.75s 4, print-text 5s steps(67); 
 }
-@keyframes cursor {
+
+
+ @keyframes cursor {
 	0% {
-			border-color: transparent;
+		border-color: transparent;
 	}
 
 	50% {
-			border-color: #fff;
+		border-color: #fff;
 	}
 
 	100% {
-			border-color: transparent;
+		border-color: transparent;
 	}
 }
 
 @keyframes print-text {
 	from {
-			width: 0;
+		width: 0;
 	}
-}
+} 

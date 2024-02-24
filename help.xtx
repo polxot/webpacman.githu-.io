@@ -14,3 +14,5 @@ git branch master   - создание ветки мастер
 git branch           -просмотр всех веток
 git checkout master -переключение на ветку (master)
 git push origin master -отправка данных на репозиторий (ветка master)
+
+&nbsp;  - пробел для предотвращения переноса слов
